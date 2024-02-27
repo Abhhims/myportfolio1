@@ -1,0 +1,40 @@
+body,html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    
+  }
+  ul { 
+     
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    
+    text-align: center;
+  }
+  .linkunderline {
+    color: #00264d;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 13px;
+    position: relative;
+  }
+  .linkunderline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #6f36ffb7;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .linkunderline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
